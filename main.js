@@ -19,8 +19,8 @@
   var typed=document.getElementById('typed');
   if(typed){
     var words={
-      tr:['İlkim Eren','Oyun Programcısı','Oyun Tasarımcısı','Simülasyon Geliştiricisi','Web Geliştiricisi'],
-      en:['İlkim Eren','Game Programmer','Game Designer','Simulation Developer','Web Developer']
+      tr:['İlkim Eren','Simülasyon Geliştiricisi','Gömülü Sistem Geliştiricisi','Proje Yöneticisi','Oyun Tasarımcısı','Oyun Programcısı','Web Geliştiricisi'],
+      en:['İlkim Eren','Simulation Developer','Embedded Systems Developer','Project Manager','Game Designer','Game Programmer','Web Developer']
     };
     var timer=null;
     function type(l){
