@@ -15,24 +15,29 @@
   var startLang=saved||((navigator.language||'tr').slice(0,2)==='tr'?'tr':'en');
   if(btn) btn.addEventListener('click',function(){setLang(root.getAttribute('data-lang')==='tr'?'en':'tr')});
 
-  /* yazı makinesi selamlama */
-  var hello=document.getElementById('hello');
-  if(hello){
-    var words={tr:['Merhaba, ben','Selam, ben'],en:["Hi, I'm","Hey, I'm"]};
+  /* isim ve unvanlar: yazılıp silinir */
+  var typed=document.getElementById('typed');
+  if(typed){
+    var words={
+      tr:['İlkim Eren','Oyun Programcısı','Oyun Tasarımcısı','Simülasyon Geliştiricisi','Web Geliştiricisi'],
+      en:['İlkim Eren','Game Programmer','Game Designer','Simulation Developer','Web Developer']
+    };
     var timer=null;
     function type(l){
       clearTimeout(timer);
-      var list=words[l], wi=0, ci=0, del=false;
-      if(reduce){hello.firstChild.nodeValue=list[0];return}
-      (function step(){
+      var list=words[l], wi=0, ci=list[0].length, del=false;
+      typed.textContent=list[0];
+      if(reduce) return;
+      timer=setTimeout(function step(){
         var w=list[wi];
         ci+=del?-1:1;
-        hello.firstChild.nodeValue=w.slice(0,ci);
-        var wait=del?45:90;
-        if(!del&&ci===w.length){del=true;wait=1800}
-        else if(del&&ci===0){del=false;wi=(wi+1)%list.length;wait=400}
+        typed.textContent=w.slice(0,ci);
+        var wait=del?40:85;
+        if(!del&&ci===w.length){del=true;wait=wi===0?2600:1700}
+        else if(del&&ci===0){del=false;wi=(wi+1)%list.length;wait=350}
         timer=setTimeout(step,wait);
-      })();
+      },2600);
+      del=true;
     }
     onLang.push(type);
   }
