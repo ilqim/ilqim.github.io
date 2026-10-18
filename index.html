@@ -11,28 +11,36 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+  <symbol id="i-itch" viewBox="0 0 24 24"><path fill="currentColor" d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.78 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.74 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.03 8.85 1.952.454 5.545.662 9.15.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.92-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 5.5h18v13H3z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="m3.5 6 8.5 7 8.5-7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.9l10.2-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5Z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v2h16v-2c0-2.8-3.6-5-8-5Z"/></symbol>
+</svg>
 <canvas id="stars" aria-hidden="true"></canvas>
 <div class="glow" aria-hidden="true"></div>
 <div class="glow-dot" aria-hidden="true"></div>
 
 <header class="topbar"><div class="wrap top">
-    <a class="logo" href="index.html">İlkim Eren</a>
-    <nav class="pill">
-      <a class="active" href="index.html"><span class="tr">Ana Sayfa</span><span class="en">Home</span></a>
-      <a href="#hakkimda"><span class="tr">Hakkımda</span><span class="en">About</span></a>
-      <a href="#deneyim"><span class="tr">Deneyim</span><span class="en">Experience</span></a>
+    <a class="logo" href="#top">İlkim Eren</a>
+    <nav class="pill" id="nav">
+      <a class="active" href="#top" data-spy="top"><span class="tr">Ana Sayfa</span><span class="en">Home</span></a>
+      <a href="#hakkimda" data-spy="hakkimda"><span class="tr">Hakkımda</span><span class="en">About</span></a>
+      <a href="#deneyim" data-spy="deneyim"><span class="tr">Deneyim</span><span class="en">Experience</span></a>
       <a href="projeler.html"><span class="tr">Projeler</span><span class="en">Projects</span></a>
     </nav>
     <div class="right">
       <button class="lang" id="langBtn" aria-label="Dil değiştir / Switch language">EN</button>
-      <a class="btn yellow hide-sm" href="#iletisim">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v2h16v-2c0-2.8-3.6-5-8-5Z"/></svg>
-        <span class="tr">İletişime Geç</span><span class="en">Get in Touch</span>
-      </a>
+      <a class="btn yellow hide-sm" href="#iletisim"><svg><use href="#i-user"/></svg><span class="tr">İletişime Geç</span><span class="en">Get in Touch</span></a>
     </div>
   </div></header>
 
-<div class="wrap">
+<div class="wrap" id="top">
   <main>
     <div class="hero">
       <div>
@@ -41,23 +49,29 @@
           <h1 aria-label="İlkim Eren"><span id="typed" aria-hidden="true">İlkim Eren</span><span class="caret" aria-hidden="true"></span></h1>
         </div>
         <p class="intro">
-          <span class="tr"><b>Bilgisayar mühendisliği</b> öğrencisiyim. Unreal Engine'de <b>gerçek zamanlı simülasyonlar</b> kuruyor, Raspberry Pi gibi küçük cihazlara <b>görmeyi</b> öğretiyorum.</span>
-          <span class="en"><b>Computer engineering</b> student. I build <b>real-time simulations</b> in Unreal Engine and teach small devices like the Raspberry Pi <b>to see</b>.</span>
+          <span class="tr">OSTİM Teknik Üniversitesi'nde <b>Bilgisayar Mühendisliği</b> 4. sınıf öğrencisiyim. <b>Gerçek zamanlı simülasyon</b>, <b>gömülü görüntü işleme</b> ve <b>oyun geliştirme</b> alanlarında projeler üretiyorum.</span>
+          <span class="en">I'm a senior <b>Computer Engineering</b> student at OSTİM Technical University, building projects in <b>real-time simulation</b>, <b>embedded computer vision</b> and <b>game development</b>.</span>
         </p>
         <div class="cta">
-          <a class="btn yellow" href="projeler.html"><span class="tr">Projelerimi Gör</span><span class="en">See My Projects</span></a>
-          <a class="btn outline" href="https://github.com/ilqim" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn yellow" href="projeler.html"><span class="tr">Projelerimi Gör</span><span class="en">See My Projects</span><svg class="arr"><use href="#i-ext"/></svg></a>
+          <div class="socials">
+            <a class="soc gh" href="https://github.com/ilqim" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg><use href="#i-gh"/></svg></a>
+            <a class="soc in" href="https://linkedin.com/in/ilkimeren" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg><use href="#i-in"/></svg></a>
+            <a class="soc yt" href="https://www.youtube.com/channel/UCOuYXVAw8-BUS2QmhrrNlSA" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg><use href="#i-yt"/></svg></a>
+            <a class="soc itch" href="https://ilqim.itch.io" target="_blank" rel="noopener" aria-label="itch.io" title="itch.io"><svg><use href="#i-itch"/></svg></a>
+            <a class="soc mail" href="mailto:ilkimeren25@gmail.com" aria-label="E-posta" title="E-posta"><svg><use href="#i-mail"/></svg></a>
+          </div>
         </div>
       </div>
 
       <aside class="now">
-        <a class="go" href="projeler.html" aria-label="Deneyime git">
+        <a class="go" href="projeler.html" aria-label="Projelere git">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
         </a>
         <p class="label"><span class="tr">Son Çalışmam</span><span class="en">Latest Work</span></p>
-        <h3><span class="tr">Üç Haftada Mağaza Kalitesinde Mobil Oyun</span><span class="en">A Store-Quality Mobile Game in Three Weeks</span></h3>
-        <p><span class="tr">UDO Games'te 5 kişilik ekibin proje yöneticisi ve oyun tasarımcısı olarak Unity ile oynanabilir bir mobil oyun çıkardık.</span><span class="en">At UDO Games, as project manager and game designer of a 5-person team, we shipped a playable mobile game in Unity.</span></p>
-        <ul class="chips"><li>Unity</li><li>C#</li><li><span class="tr">Oyun tasarımı</span><span class="en">Game design</span></li><li><span class="tr">Proje yönetimi</span><span class="en">Project management</span></li></ul>
+        <h3><span class="tr">Üç Haftada Profesyonel Mobil Oyun</span><span class="en">A Professional Mobile Game in Three Weeks</span></h3>
+        <p><span class="tr">UDO Games'te 5 kişilik ekibin proje yöneticisi ve oyun tasarımcısı olarak Unity ile profesyonel bir mobil oyun geliştirdik.</span><span class="en">At UDO Games, as project manager and game designer of a 5-person team, we developed a professional mobile game in Unity.</span></p>
+        <ul class="chips"><li>Unity</li><li>C#</li><li><span class="tr">Oyun Tasarımı</span><span class="en">Game Design</span></li><li><span class="tr">Proje Yönetimi</span><span class="en">Project Management</span></li></ul>
       </aside>
     </div>
 
@@ -69,10 +83,12 @@
           <div class="bbox" aria-hidden="true"><span>ilkim 0.99</span></div>
         </figure>
         <div>
-          <p class="tr">OSTİM Teknik Üniversitesi'nde Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. En çok ilgimi çeken şey, bir sistemin gerçek zamanda doğru ve akıcı çalışması: Unreal Engine'de uçan bir uçak ya da bir Raspberry Pi kamerasından saniyede onlarca kare işleyen bir model.</p>
-          <p class="tr">C++, C#, C ve Python kullanıyorum. Simülasyon, görüntü işleme, yapay zekâ, oyun ve web alanlarında altı staj yaptım; bir mobil oyun ekibinde proje yöneticiliği de üstlendim.</p>
-          <p class="en">I'm a senior Computer Engineering student at OSTİM Technical University. What fascinates me most is making systems run correctly and smoothly in real time, whether it's an aircraft flying in Unreal Engine or a model processing dozens of frames per second from a Raspberry Pi camera.</p>
-          <p class="en">I work with C++, C#, C and Python. I've completed six internships across simulation, computer vision, AI, games and web, and I've project-managed a mobile game team.</p>
+          <p class="tr">OSTİM Teknik Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. Simülasyon, gerçek zamanlı sistemler, görüntü işleme ve oyun geliştirme alanlarında çalışıyor; bu alanlarda altı staj tamamladım.</p>
+          <p class="tr">Stajlarımda Unreal Engine ile uçak ve kara araçları için gerçek zamanlı bir simülasyon ortamı geliştirdim, Raspberry Pi üzerinde YOLO tabanlı nesne tespiti modellerini eğitip uç cihazlar için optimize ettim ve bir mobil oyun ekibinde proje yöneticiliği üstlendim.</p>
+          <p class="tr">Yaklaşık iki yıldır Unity ve Unreal Engine ile, C# ve C++ kullanarak oyun geliştiriyorum. Oyun mekaniği, seviye tasarımı, düşman yapay zekâsı, ara sahneler ve kullanıcı arayüzü konularında deneyim kazandım. Hedefim, teknik ve yaratıcı yönümü bir arada geliştirerek gerçek zamanlı sistemler ve oyunlar alanında kendimi ileri taşımak.</p>
+          <p class="en">I'm a senior Computer Engineering student at OSTİM Technical University, working in simulation, real-time systems, computer vision and game development, with six internships completed across these fields.</p>
+          <p class="en">During my internships I developed a real-time simulation environment for aircraft and ground vehicles in Unreal Engine, trained YOLO-based object detection models and optimized them for edge devices on Raspberry Pi, and served as project manager on a mobile game team.</p>
+          <p class="en">For about two years I've been developing games with Unity and Unreal Engine using C# and C++, gaining experience in game mechanics, level design, enemy AI, cutscenes and user interfaces. My goal is to grow both my technical and creative sides in real-time systems and games.</p>
           <div class="stats">
             <div class="stat"><b>6</b><small><span class="tr">staj</span><span class="en">internships</span></small></div>
             <div class="stat"><b>4.</b><small><span class="tr">sınıf</span><span class="en">year</span></small></div>
@@ -82,10 +98,7 @@
     </section>
 
     <section id="deneyim">
-      <div class="head">
-        <h2><span class="tr">Deneyim</span><span class="en">Experience</span></h2>
-        <p><span class="tr">En yeniden eskiye stajlarım</span><span class="en">My internships, newest first</span></p>
-      </div>
+      <div class="head"><h2><span class="tr">Deneyim</span><span class="en">Experience</span></h2></div>
       <ol class="timeline">
         <li class="reveal"><div class="card">
           <div class="row"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
@@ -114,8 +127,8 @@
         <li class="reveal"><div class="card">
           <div class="row"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg></div>
             <div><h3><span class="tr">Frontend Geliştirme Stajyeri</span><span class="en">Frontend Development Intern</span></h3><div class="co">Bilicisoft Bilişim ve Savunma · Ankara</div></div></div>
-          <ul class="tr"><li>Angular kullanarak web sitesi tasarladım ve geliştirdim.</li></ul>
-          <ul class="en"><li>Designed and built a website using Angular.</li></ul>
+          <ul class="tr"><li>Angular kullanarak web siteleri tasarladım ve geliştirdim.</li></ul>
+          <ul class="en"><li>Designed and built websites using Angular.</li></ul>
           <span class="year"><span class="tr">Haz – Tem 2025</span><span class="en">Jun – Jul 2025</span></span>
         </div></li>
 
@@ -143,19 +156,19 @@
         <div class="card reveal"><h3><span class="tr">Simülasyon ve Gerçek Zamanlı Sistemler</span><span class="en">Simulation and Real-Time Systems</span></h3><ul class="tags"><li>Unreal Engine</li><li>Raspberry Pi</li></ul></div>
         <div class="card reveal"><h3><span class="tr">Görüntü İşleme ve Gömülü Yapay Zekâ</span><span class="en">Computer Vision and Embedded AI</span></h3><ul class="tags"><li>YOLO</li><li>ONNX</li><li>TensorFlow Lite</li><li>NCNN</li><li>CVAT</li></ul></div>
         <div class="card reveal"><h3><span class="tr">Oyun ve Mobil Geliştirme</span><span class="en">Game and Mobile Development</span></h3><ul class="tags"><li>Unity</li><li>Unreal Engine</li><li>Android Studio</li><li>Kotlin</li></ul></div>
-        <div class="card reveal"><h3><span class="tr">Diller ve Araçlar</span><span class="en">Languages and Tools</span></h3><ul class="tags"><li>C++</li><li>C#</li><li>C</li><li>Python</li><li>Kotlin</li><li>TypeScript</li><li>Angular</li><li>Git</li><li>GitHub</li></ul></div>
+        <div class="card reveal"><h3><span class="tr">Diller ve Araçlar</span><span class="en">Languages and Tools</span></h3><ul class="tags"><li>C++</li><li>C#</li><li>C</li><li>Python</li><li>Kotlin</li><li>TypeScript</li><li>HTML</li><li>CSS</li><li>Angular</li><li>Git</li><li>GitHub</li></ul></div>
       </div>
     </section>
 
     <section id="iletisim" class="contact">
       <div class="head"><h2><span class="tr">Birlikte Bir Şey Yapalım</span><span class="en">Let's Build Something</span></h2></div>
-      <p><span class="tr">Staj, proje ya da sadece merhaba demek için yazabilirsin.</span><span class="en">Reach out about internships, projects, or just to say hi.</span></p>
+      <p><span class="tr">Staj, iş birliği veya projeler hakkında benimle iletişime geçebilirsiniz.</span><span class="en">Feel free to reach out about internships, collaborations or projects.</span></p>
       <div class="cta">
-        <a class="btn yellow" href="mailto:ilkimeren25@gmail.com">ilkimeren25@gmail.com</a>
-        <a class="btn outline" href="https://linkedin.com/in/ilkimeren" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn outline" href="https://github.com/ilqim" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn outline" href="https://ilqim.itch.io" target="_blank" rel="noopener">itch.io</a>
-        <a class="btn outline" href="https://www.youtube.com/channel/UCOuYXVAw8-BUS2QmhrrNlSA" target="_blank" rel="noopener">YouTube</a>
+        <a class="btn yellow" href="mailto:ilkimeren25@gmail.com"><svg><use href="#i-mail"/></svg><span class="tr">E-posta Gönder</span><span class="en">Send an Email</span></a>
+        <a class="btn brand in" href="https://linkedin.com/in/ilkimeren" target="_blank" rel="noopener"><svg><use href="#i-in"/></svg>LinkedIn</a>
+        <a class="btn brand gh" href="https://github.com/ilqim" target="_blank" rel="noopener"><svg><use href="#i-gh"/></svg>GitHub</a>
+        <a class="btn brand itch" href="https://ilqim.itch.io" target="_blank" rel="noopener"><svg><use href="#i-itch"/></svg>itch.io</a>
+        <a class="btn brand yt" href="https://www.youtube.com/channel/UCOuYXVAw8-BUS2QmhrrNlSA" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>YouTube</a>
       </div>
     </section>
   </main>

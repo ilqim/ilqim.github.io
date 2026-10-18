@@ -82,6 +82,20 @@
     })();
   }
 
+
+  /* menüde bulunulan bölümü vurgula */
+  var navLinks=document.querySelectorAll('#nav a[data-spy]');
+  if(navLinks.length){
+    var ids=['hakkimda','deneyim'];
+    function spy(){
+      var cur='top', y=window.scrollY+140;
+      ids.forEach(function(id){var el=document.getElementById(id); if(el&&el.offsetTop<=y) cur=id});
+      if(cur==='deneyim'){var nxt=document.getElementById('yetenekler'); if(nxt&&nxt.offsetTop<=y) cur='deneyim'}
+      navLinks.forEach(function(a){a.classList.toggle('active',a.getAttribute('data-spy')===cur)});
+    }
+    addEventListener('scroll',spy,{passive:true}); addEventListener('hashchange',spy); spy();
+  }
+
   /* kaydırınca beliren kartlar */
   var items=document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window&&!reduce){

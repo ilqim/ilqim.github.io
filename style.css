@@ -56,12 +56,12 @@ section{scroll-margin-top:90px}
 .btn svg{width:18px;height:18px}
 
 /* hero */
-.hero{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:center;min-height:calc(100vh - 100px);padding:40px 0 80px}
-.hello{font-size:34px;font-weight:500;margin:0 0 6px}
+.hero{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:center;min-height:calc(100vh - 100px);padding:40px 0 80px}
+.hello{font-size:24px;font-weight:500;color:var(--muted);margin:0 0 4px}
 .name .caret{display:inline-block;width:.07em;height:.85em;background:var(--accent);vertical-align:-.05em;margin-left:.06em;border-radius:2px;animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
 .name{position:relative;margin:0 0 32px}
-.name h1{min-height:2.1em;font:800 clamp(46px,7.2vw,92px)/1.05 "Plus Jakarta Sans",sans-serif;letter-spacing:-.045em;margin:0}
+.name h1{white-space:nowrap;font:800 clamp(21px,5.4vw,46px)/1.2 "Plus Jakarta Sans",sans-serif;letter-spacing:-.045em;margin:0}
 .name h1 i{color:var(--accent);font-style:normal}
 .intro{font-size:20px;color:var(--muted);max-width:32em;margin:0 0 28px}
 .intro b{color:var(--ink);font-weight:600}
@@ -131,7 +131,7 @@ section{padding:96px 0}
 .pin{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--ink);background:var(--surface2);border:1px solid var(--line);border-radius:999px;padding:4px 12px 4px 9px;white-space:nowrap}
 .pin svg{width:14px;height:14px;color:var(--accent)}
 .role{color:var(--accent)!important;font-weight:600;font-size:15px;margin:-4px 0 12px!important;flex:none!important}
-.repos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 18px}
+.repos{display:grid;grid-template-columns:1fr;gap:10px;margin:0 0 18px}
 .repo{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface2);text-decoration:none;transition:transform .25s,border-color .25s}
 .repo:hover{transform:translateY(-3px);border-color:var(--accent)}
 .repo svg{width:22px;height:22px;flex:none}
@@ -193,3 +193,23 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px;text-align:center;b
 .tags li:hover{color:var(--accent);transform:translateY(-2px)}
 @media (prefers-reduced-motion:reduce){.hero > div > *,.hero .now,.timeline > li.in::after{animation:none}}
 .card ul.tags{padding-left:0;margin:0;color:inherit}
+
+/* hero sosyal ikonlar */
+.cta{align-items:center}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.soc{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);color:var(--ink);text-decoration:none;
+  transition:transform .25s cubic-bezier(.3,1.6,.5,1),background-color .25s,border-color .25s,color .25s,box-shadow .25s}
+.soc svg{width:20px;height:20px}
+.soc:hover{transform:translateY(-4px) scale(1.06)}
+.soc.gh:hover{background:#fff;color:#111;border-color:#fff}
+.soc.in:hover{background:#0A66C2;border-color:#0A66C2;color:#fff;box-shadow:0 10px 24px -8px rgba(10,102,194,.7)}
+.soc.yt:hover{background:#FF3B3B;border-color:#FF3B3B;color:#fff;box-shadow:0 10px 24px -8px rgba(255,59,59,.7)}
+.soc.itch:hover{background:#FA5C5C;border-color:#FA5C5C;color:#fff;box-shadow:0 10px 24px -8px rgba(250,92,92,.7)}
+.soc.mail:hover{background:var(--accent);border-color:var(--accent);color:var(--accentInk);box-shadow:0 10px 24px -8px rgba(255,201,74,.7)}
+/* marka renkli butonlar */
+.btn.brand{color:#fff}
+.btn.brand.in{background:#0A66C2}.btn.brand.in:hover{box-shadow:0 10px 26px -8px rgba(10,102,194,.75)}
+.btn.brand.gh{background:#F0F3F8;color:#111}.btn.brand.gh:hover{box-shadow:0 10px 26px -8px rgba(240,243,248,.5)}
+.btn.brand.itch{background:#FA5C5C}.btn.brand.itch:hover{box-shadow:0 10px 26px -8px rgba(250,92,92,.75)}
+.btn.brand.yt{background:#FF3B3B}.btn.brand.yt:hover{box-shadow:0 10px 26px -8px rgba(255,59,59,.75)}
+.contact .btn svg{width:18px;height:18px}
