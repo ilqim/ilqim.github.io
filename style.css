@@ -241,3 +241,8 @@ section{scroll-margin-top:12px}
 .stat{transition:transform .3s cubic-bezier(.3,1.6,.5,1),border-color .3s}
 .stat:hover{transform:translateY(-5px);border-color:var(--accent)}
 @media (prefers-reduced-motion:reduce){.detect .bbox{clip-path:none}.detect.in .bbox{animation:none}}
+
+.badges{display:inline-flex;align-items:center;gap:6px}
+.medal{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:800;color:#F2B07A;background:rgba(205,127,50,.14);border:1px solid rgba(205,127,50,.55);border-radius:999px;padding:3px 11px 3px 6px;white-space:nowrap;box-shadow:0 0 16px -4px rgba(205,127,50,.55)}
+.medal svg{width:18px;height:18px}
+footer{font-weight:300;font-size:13px;letter-spacing:.02em}
