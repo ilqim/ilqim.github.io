@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projeler · İlkim Eren</title>
+<meta name="description" content="İlkim Eren'in projeleri: simülasyon, görüntü işleme, oyun ve web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Yellowtail&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+<div class="glow-dot" aria-hidden="true"></div>
+
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="index.html" aria-label="Ana sayfa">İE</a>
+    <nav class="pill">
+      <a href="index.html"><span class="tr">Ana sayfa</span><span class="en">Home</span></a>
+      <a href="index.html#hakkimda"><span class="tr">Hakkımda</span><span class="en">About</span></a>
+      <a href="index.html#deneyim"><span class="tr">Deneyim</span><span class="en">Experience</span></a>
+      <a class="active" href="projeler.html"><span class="tr">Projeler</span><span class="en">Projects</span></a>
+    </nav>
+    <div class="right">
+      <button class="lang" id="langBtn" aria-label="Dil değiştir / Switch language">EN</button>
+      <a class="btn yellow hide-sm" href="index.html#iletisim">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v2h16v-2c0-2.8-3.6-5-8-5Z"/></svg>
+        <span class="tr">İletişime geç</span><span class="en">Get in touch</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding-top:64px">
+      <div class="head">
+        <h2><span class="tr">Projeler</span><span class="en">Projects</span></h2>
+        <p><span class="tr">Simülasyon, görüntü işleme, oyun ve web üzerine yaptıklarım</span><span class="en">Things I've built across simulation, computer vision, games and web</span></p>
+      </div>
+
+      <div class="projects">
+        <article class="project reveal">
+          <div class="kind"><span class="tr">Simülasyon</span><span class="en">Simulation</span></div>
+          <h3><span class="tr">Uçak ve kara aracı simülasyonu</span><span class="en">Aircraft &amp; ground vehicle simulation</span></h3>
+          <p><span class="tr">Unreal Engine ile uçak ve kara araçları için gerçekçi, gerçek zamanlı bir simülasyon ortamı. Uçuş ve sürüş senaryolarına uygun arazi tasarladım; sahne ve render performansını akıcı çalışacak şekilde optimize ettim.</span><span class="en">A realistic, real-time simulation environment for aircraft and ground vehicles in Unreal Engine. I designed terrain for flight and driving scenarios and optimized scene and render performance.</span></p>
+          <ul class="tags"><li>Unreal Engine</li><li>C++</li><li><span class="tr">Arazi tasarımı</span><span class="en">Terrain design</span></li></ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="kind"><span class="tr">Görüntü işleme</span><span class="en">Computer vision</span></div>
+          <h3><span class="tr">Raspberry Pi'de gerçek zamanlı tespit</span><span class="en">Real-time detection on Raspberry Pi</span></h3>
+          <p><span class="tr">YOLO tabanlı nesne tespiti modelleri eğittim, ONNX'e dönüştürüp TensorFlow Lite ve NCNN ile küçük donanımda hızlandırdım. Veri setlerini CVAT ile kendim etiketledim.</span><span class="en">Trained YOLO-based detection models, converted them to ONNX and accelerated them on small hardware with TensorFlow Lite and NCNN. I labeled the datasets myself in CVAT.</span></p>
+          <ul class="tags"><li>YOLO</li><li>Python</li><li>ONNX</li><li>TFLite</li><li>NCNN</li><li>CVAT</li></ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="kind"><span class="tr">Oyun</span><span class="en">Game</span></div>
+          <h3><span class="tr">Üç haftada mobil oyun</span><span class="en">A mobile game in three weeks</span></h3>
+          <p><span class="tr">Beş kişilik ekibin proje yöneticisi ve oyun tasarımcısıydım. Konsepti ve mekanikleri belirledim, oyunu Unity ile oynanabilir sürüme taşıdık.</span><span class="en">I was project manager and game designer for a five-person team. I defined the concept and mechanics, and we shipped a playable build in Unity.</span></p>
+          <ul class="tags"><li>Unity</li><li>C#</li><li><span class="tr">Proje yönetimi</span><span class="en">Project management</span></li></ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="kind"><span class="tr">Oyun</span><span class="en">Games</span></div>
+          <h3><span class="tr">itch.io oyunlarım</span><span class="en">My itch.io games</span></h3>
+          <p><span class="tr">Kendi yaptığım küçük oyunlar itch.io sayfamda oynanabilir durumda.</span><span class="en">Small games I've made, playable on my itch.io page.</span></p>
+          <ul class="tags"><li>Unity</li><li>C#</li></ul>
+          <div class="links"><a class="btn outline" href="https://ilqim.itch.io" target="_blank" rel="noopener"><span class="tr">Oyna</span><span class="en">Play</span></a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="kind">Web</div>
+          <h3><span class="tr">Angular ile kurumsal web sitesi</span><span class="en">Corporate website in Angular</span></h3>
+          <p><span class="tr">Bilicisoft'taki stajımda Angular kullanarak bir web sitesini tasarlayıp geliştirdim.</span><span class="en">During my internship at Bilicisoft I designed and built a website using Angular.</span></p>
+          <ul class="tags"><li>Angular</li><li>TypeScript</li><li>SEO</li></ul>
+        </article>
+
+        <article class="project soon reveal">
+          <div class="kind"><span class="tr">Yakında</span><span class="en">Coming soon</span></div>
+          <h3><span class="tr">Bitirme projesi</span><span class="en">Graduation project</span></h3>
+          <p><span class="tr">Üzerinde çalışıyorum. Hazır olunca burada olacak.</span><span class="en">In progress. It'll be here when it's ready.</span></p>
+        </article>
+      </div>
+
+      <div class="center"><a class="btn outline" href="https://github.com/ilqim" target="_blank" rel="noopener"><span class="tr">Tüm kodlarım GitHub'da</span><span class="en">All my code on GitHub</span></a></div>
+    </section>
+  </main>
+</div>
+<footer><div class="wrap">© 2026 İlkim Eren</div></footer>
+<script src="main.js"></script>
+</body>
+</html>
