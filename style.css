@@ -213,3 +213,31 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px;text-align:center;b
 .btn.brand.itch{background:#FA5C5C}.btn.brand.itch:hover{box-shadow:0 10px 26px -8px rgba(250,92,92,.75)}
 .btn.brand.yt{background:#FF3B3B}.btn.brand.yt:hover{box-shadow:0 10px 26px -8px rgba(255,59,59,.75)}
 .contact .btn svg{width:18px;height:18px}
+
+/* görev kutuları */
+.roles{display:flex;flex-wrap:wrap;gap:6px;margin:-2px 0 14px}
+.rb{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--accent);background:rgba(255,201,74,.1);border:1px solid rgba(255,201,74,.38);border-radius:8px;padding:4px 10px}
+.rb svg{width:13px;height:13px;flex:none}
+.rb.meta{color:var(--muted);background:var(--surface2);border-color:var(--line)}
+.skills .span2{grid-column:span 2}
+@media (max-width:900px){.skills .span2{grid-column:auto}}
+
+/* bölüme gidince başlık menünün hemen altında kalsın */
+section{scroll-margin-top:12px}
+#hakkimda .head{margin-bottom:40px}
+
+/* hakkımda animasyonları */
+.reveal.from-left{transform:translateX(-50px)}
+.reveal.from-right{transform:translateX(50px)}
+.reveal.from-left.in,.reveal.from-right.in{transform:none}
+#hakkimda p.reveal:nth-of-type(2),#hakkimda p.reveal:nth-of-type(5){transition-delay:.12s}
+#hakkimda p.reveal:nth-of-type(3),#hakkimda p.reveal:nth-of-type(6){transition-delay:.24s}
+#hakkimda .stats.reveal{transition-delay:.36s}
+.detect .bbox{clip-path:inset(0 100% 100% 0)}
+.detect.in .bbox{animation:draw 1s .5s cubic-bezier(.6,0,.2,1) forwards}
+@keyframes draw{to{clip-path:inset(-30px -4px -4px -4px)}}
+.detect img{transition:transform .5s ease,box-shadow .5s}
+.detect:hover img{transform:scale(1.02) rotate(-1deg);box-shadow:0 30px 60px -30px rgba(255,201,74,.45)}
+.stat{transition:transform .3s cubic-bezier(.3,1.6,.5,1),border-color .3s}
+.stat:hover{transform:translateY(-5px);border-color:var(--accent)}
+@media (prefers-reduced-motion:reduce){.detect .bbox{clip-path:none}.detect.in .bbox{animation:none}}

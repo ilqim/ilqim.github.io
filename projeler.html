@@ -20,6 +20,9 @@
   <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
   <symbol id="i-ext" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M7 17 17 7M8 7h9v9"/></symbol>
   <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.9l10.2-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5Z"/></symbol>
+  <symbol id="i-team" viewBox="0 0 24 24"><path fill="currentColor" d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm7.5 0a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM9 13c-3.9 0-7 1.9-7 4.5V20h14v-2.5C16 14.9 12.9 13 9 13Zm7.5 0c-.6 0-1.2.1-1.7.2 1.4 1 2.2 2.4 2.2 4.3V20H22v-2.5c0-2.6-2.5-4.5-5.5-4.5Z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-role" viewBox="0 0 24 24"><path fill="currentColor" d="M20 7h-4V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Zm-10-2h4v2h-4V5Z"/></symbol>
   <symbol id="i-user" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v2h16v-2c0-2.8-3.6-5-8-5Z"/></symbol>
 </svg>
 <canvas id="stars" aria-hidden="true"></canvas>
@@ -50,11 +53,11 @@
 
       <div class="projects">
         <article class="project reveal">
-          <div class="ptop"><span class="kind"><span class="tr">Simülasyon</span><span class="en">Simulation</span></span><span class="pin"><svg><use href="#i-pin"/></svg><span class="tr">Hypernova Stajı</span><span class="en">Hypernova Internship</span></span></div>
+          <div class="ptop"><span class="kind"><span class="tr">Simülasyon</span><span class="en">Simulation</span></span><span class="pin"><svg><use href="#i-pin"/></svg>Hypernova</span></div>
           <h3><span class="tr">Uçak ve Kara Aracı Simülasyonu</span><span class="en">Aircraft and Ground Vehicle Simulation</span></h3>
-          <p class="role"><span class="tr">Görevim: Geliştirici · tek kişilik proje</span><span class="en">My role: Developer · solo project</span></p>
-          <p><span class="tr">Unreal Engine ile uçak ve kara araçları için gerçekçi, gerçek zamanlı bir simülasyon ortamı geliştirdim. Arazi için renk kodlu tek bir maske dokusuyla hem zemin malzemelerini (çim, toprak, kaya, kum) hem de PCG Graph ile bitki dağılımını kontrol eden bir sistem tasarladım; sahne ve render performansını akıcı çalışacak şekilde optimize ettim.</span><span class="en">I developed a realistic, real-time simulation environment for aircraft and ground vehicles in Unreal Engine. For the terrain, I designed a system where a single color-coded mask texture drives both ground materials (grass, dirt, rock, sand) and, via PCG Graph, foliage distribution; I also optimized scene and render performance.</span></p>
-          <ul class="tags"><li>Unreal Engine</li><li>C++</li><li>PCG Graph</li><li><span class="tr">Arazi Tasarımı</span><span class="en">Terrain Design</span></li></ul>
+          <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Geliştirici</span><span class="en">Developer</span></span><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">Tek kişilik proje</span><span class="en">Solo project</span></span></div>
+          <p><span class="tr">Unreal Engine ile uçak ve kara araçları için gerçekçi, gerçek zamanlı bir simülasyon ortamı geliştirdim. Arazi için renk kodlu tek bir maske dokusuyla hem zemin malzemelerini (çim, toprak, kaya, kum) hem de PCG Graph ile bitki dağılımını kontrol eden prosedürel bir arazi sistemi tasarladım; sahne ve render performansını akıcı çalışacak şekilde optimize ettim.</span><span class="en">I developed a realistic, real-time simulation environment for aircraft and ground vehicles in Unreal Engine. For the terrain, I designed a procedural landscape system where a single color-coded mask texture drives both ground materials (grass, dirt, rock, sand) and, via PCG Graph, foliage distribution; I also optimized scene and render performance.</span></p>
+          <ul class="tags"><li>Unreal Engine</li><li>C++</li><li>PCG Graph</li><li><span class="tr">Prosedürel Üretim</span><span class="en">Procedural Generation</span></li><li><span class="tr">Arazi Tasarımı</span><span class="en">Terrain Design</span></li></ul>
           <div class="links">
             <a class="btn sm yt" href="https://www.youtube.com/watch?v=Ok-TpzLQ8_k" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg><span class="tr">Videoyu İzle</span><span class="en">Watch Video</span></a>
             <a class="btn sm outline" href="https://github.com/ilqim/color-mask-based-landscape-ue5" target="_blank" rel="noopener"><svg><use href="#i-gh"/></svg>GitHub</a>
@@ -62,25 +65,25 @@
         </article>
 
         <article class="project reveal">
-          <div class="ptop"><span class="kind"><span class="tr">Görüntü İşleme</span><span class="en">Computer Vision</span></span><span class="pin"><svg><use href="#i-pin"/></svg><span class="tr">Mavinci Stajı</span><span class="en">Mavinci Internship</span></span></div>
+          <div class="ptop"><span class="kind"><span class="tr">Görüntü İşleme</span><span class="en">Computer Vision</span></span><span class="pin"><svg><use href="#i-pin"/></svg>Mavinci</span></div>
           <h3><span class="tr">Raspberry Pi'de Gerçek Zamanlı Nesne Tespiti</span><span class="en">Real-Time Object Detection on Raspberry Pi</span></h3>
-          <p class="role"><span class="tr">Görevim: Geliştirici · tek kişilik proje</span><span class="en">My role: Developer · solo project</span></p>
+          <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Geliştirici</span><span class="en">Developer</span></span><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">Tek kişilik proje</span><span class="en">Solo project</span></span></div>
           <p><span class="tr">YOLO tabanlı nesne tespiti modelleri eğittim, ONNX'e dönüştürüp TensorFlow Lite ve NCNN ile Raspberry Pi üzerinde gerçek zamanlı çalışacak şekilde optimize ettim. Veri setlerini CVAT ile etiketleyerek oluşturdum.</span><span class="en">I trained YOLO-based detection models, converted them to ONNX and optimized them with TensorFlow Lite and NCNN to run in real time on a Raspberry Pi. I built the datasets by labeling them in CVAT.</span></p>
           <ul class="tags"><li>YOLO</li><li>Python</li><li>Raspberry Pi</li><li>ONNX</li><li>TFLite</li><li>NCNN</li><li>CVAT</li></ul>
         </article>
 
         <article class="project reveal">
-          <div class="ptop"><span class="kind"><span class="tr">Mobil Oyun</span><span class="en">Mobile Game</span></span><span class="pin"><svg><use href="#i-pin"/></svg><span class="tr">UDO Games Stajı</span><span class="en">UDO Games Internship</span></span></div>
+          <div class="ptop"><span class="kind"><span class="tr">Mobil Oyun</span><span class="en">Mobile Game</span></span><span class="pin"><svg><use href="#i-pin"/></svg>UDO Games</span></div>
           <h3><span class="tr">Üç Haftada Profesyonel Mobil Oyun</span><span class="en">A Professional Mobile Game in Three Weeks</span></h3>
-          <p class="role"><span class="tr">Görevim: Proje Yöneticisi ve Oyun Tasarımcısı · 5 kişilik ekip</span><span class="en">My role: Project Manager &amp; Game Designer · team of 5</span></p>
-          <p><span class="tr">Profesyonel bir oyun stüdyosunun iş akışıyla, üç haftada konseptten oynanabilir bir mobil oyuna ulaştık. Ekibi ve takvimi yönettim, oyunun konseptini ve mekaniklerini tasarladım; oyun Unity ile geliştirildi.</span><span class="en">Following a professional game studio's workflow, we went from concept to a playable mobile game in three weeks. I managed the team and schedule and designed the concept and mechanics; the game was built in Unity.</span></p>
-          <ul class="tags"><li>Unity</li><li>C#</li><li><span class="tr">Proje Yönetimi</span><span class="en">Project Management</span></li><li><span class="tr">Oyun Tasarımı</span><span class="en">Game Design</span></li><li><span class="tr">Oyun Programlama</span><span class="en">Game Programming</span></li></ul>
+          <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Proje Yöneticisi</span><span class="en">Project Manager</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Tasarımcısı</span><span class="en">Game Designer</span></span><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">5 kişilik ekip</span><span class="en">Team of 5</span></span></div>
+          <p><span class="tr">Profesyonel bir oyun stüdyosunun iş akışıyla, üç haftada konseptten oynanabilir bir mobil oyuna ulaştık. Proje yöneticisi olarak 5 kişilik ekibin görev dağılımını ve takvimini yönettim. Oyun tasarımcısı olarak konsepti ve mekanikleri belirledim, seviye tasarımını kurdum, oyunun temel döngüsünü (core loop) ve oyun içi ekonomisini oluşturdum. Oyun Unity ile geliştirildi.</span><span class="en">Following a professional game studio's workflow, we went from concept to a playable mobile game in three weeks. As project manager, I handled task distribution and scheduling for the 5-person team. As game designer, I defined the concept and mechanics, built the level design, and created the game's core loop and in-game economy. The game was built in Unity.</span></p>
+          <ul class="tags"><li>Unity</li><li>C#</li><li><span class="tr">Proje Yönetimi</span><span class="en">Project Management</span></li><li><span class="tr">Oyun Tasarımı</span><span class="en">Game Design</span></li><li><span class="tr">Oyun Programlama</span><span class="en">Game Programming</span></li><li><span class="tr">Seviye Tasarımı</span><span class="en">Level Design</span></li><li><span class="tr">Oyun Ekonomisi</span><span class="en">Game Economy</span></li></ul>
         </article>
 
         <article class="project reveal">
-          <div class="ptop"><span class="kind">Web</span><span class="pin"><svg><use href="#i-pin"/></svg><span class="tr">Bilicisoft Stajı</span><span class="en">Bilicisoft Internship</span></span></div>
+          <div class="ptop"><span class="kind">Web</span><span class="pin"><svg><use href="#i-pin"/></svg>Bilicisoft</span></div>
           <h3><span class="tr">Angular ile Web Siteleri</span><span class="en">Websites Built with Angular</span></h3>
-          <p class="role"><span class="tr">Görevim: Frontend Geliştirici</span><span class="en">My role: Frontend Developer</span></p>
+          <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Frontend Geliştirici</span><span class="en">Frontend Developer</span></span></div>
           <p><span class="tr">Bilicisoft stajım süresince Angular kullanarak aşağıdaki web sitelerini tasarlayıp geliştirdim:</span><span class="en">During my Bilicisoft internship I designed and built the following websites with Angular:</span></p>
           <div class="repos">
             <a class="repo" href="https://github.com/ilqim/project-management-system" target="_blank" rel="noopener"><svg><use href="#i-gh"/></svg><span><b><span class="tr">Proje ve Görev Yönetim Sitesi</span><span class="en">Project &amp; Task Management Site</span></b><small>project-management-system</small></span><svg class="arr"><use href="#i-ext"/></svg></a>
@@ -101,7 +104,7 @@
         <article class="game reveal">
           <div class="ptop"><span class="kind">Mobile Puzzle</span><span class="pin"><svg><use href="#i-pin"/></svg><span class="tr">Kişisel Proje</span><span class="en">Personal Project</span></span></div>
           <h3>Block Fun</h3>
-          <p class="role"><span class="tr">Tüm programlama ve oyun mekanikleri</span><span class="en">All programming and game mechanics</span></p>
+          <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Programlama</span><span class="en">Programming</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Mekanikleri</span><span class="en">Game Mechanics</span></span></div>
           <p><span class="tr">Izgaraya şekil yerleştirerek satır, sütun ve kareleri temizlediğin bir mobil bulmaca. Kombo sistemi, market, güçlendiriciler ve şifreli skor kaydı.</span><span class="en">A mobile block puzzle about clearing rows, columns and squares. Combo system, in-game shop, power-ups and encrypted high scores.</span></p>
           <div class="links">
             <a class="btn sm yt" href="https://youtu.be/-xBJ3re-Pdw" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>Video</a>
@@ -112,7 +115,7 @@
         <article class="game reveal">
           <div class="ptop"><span class="kind">Puzzle Platformer</span><span class="pin"><svg><use href="#i-pin"/></svg><span class="tr">Kişisel Proje</span><span class="en">Personal Project</span></span></div>
           <h3>Aria &amp; Alric</h3>
-          <p class="role"><span class="tr">Programlama, mekanikler, seviye tasarımı ve hikâye</span><span class="en">Programming, mechanics, level design and story</span></p>
+          <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Programlama</span><span class="en">Programming</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Mekanikler</span><span class="en">Mechanics</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Seviye Tasarımı</span><span class="en">Level Design</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Hikâye</span><span class="en">Story</span></span></div>
           <p><span class="tr">Leylek Kral'a rağmen bebeklerine kavuşmak için yola çıkan bir çiftin hikâyesi. Her biri bir mevsim olan 4 bölüm, ara sahneler, mini oyunlar ve düşman yapay zekâsı.</span><span class="en">A couple's journey to reach their baby despite the Stork King. Four levels, one per season, with cutscenes, mini-games and enemy AI.</span></p>
           <div class="links">
             <a class="btn sm yt" href="https://www.youtube.com/watch?v=oCF3ymqU_ik" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>Video</a>
@@ -124,8 +127,8 @@
         <article class="game reveal">
           <div class="ptop"><span class="kind">Top Down Shooter</span><span class="pin"><svg><use href="#i-pin"/></svg>Jamination 8</span></div>
           <h3>ALIEN__002</h3>
-          <p class="role"><span class="tr">Proje Lideri ve Oyun Tasarımcısı · tek kişilik ekip · 48 saat</span><span class="en">Project Lead &amp; Game Designer · solo team · 48 hours</span></p>
-          <p><span class="tr">Saldırıya uğrayan uzay gemisini kurtarmaya çalışan bir uzaylı. Tasarımdan programlamaya tüm süreci tek başıma yürüttüm. 3 bölüm, 3 düşman ve 3 silah çeşidi.</span><span class="en">An alien defending a spaceship under attack. I handled the whole process from design to programming on my own. Three levels, three enemy and weapon types.</span></p>
+          <div class="roles"><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">Tek kişilik ekip</span><span class="en">Solo team</span></span><span class="rb meta"><svg><use href="#i-clock"/></svg><span class="tr">48 saat</span><span class="en">48 hours</span></span></div>
+          <p><span class="tr">Saldırıya uğrayan uzay gemisini kurtarmaya çalışan bir uzaylı. Tasarımdan programlamaya tüm süreç bana ait. 3 bölüm, 3 düşman ve 3 silah çeşidi.</span><span class="en">An alien defending a spaceship under attack. I handled the whole process from design to programming on my own. Three levels, three enemy and weapon types.</span></p>
           <div class="links">
             <a class="btn sm yt" href="https://www.youtube.com/watch?v=EshkBE0iMmY" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>Video</a>
             <a class="btn sm play" href="https://ilqim.itch.io/alien-002" target="_blank" rel="noopener"><svg><use href="#i-itch"/></svg><span class="tr">itch.io'da Oyna</span><span class="en">Play on itch.io</span><svg class="arr"><use href="#i-ext"/></svg></a>
@@ -136,7 +139,7 @@
         <article class="game reveal">
           <div class="ptop"><span class="kind">Platformer</span><span class="pin"><svg><use href="#i-pin"/></svg>OstimJam</span></div>
           <h3>X OE A-12</h3>
-          <p class="role"><span class="tr">Proje Lideri, Oyun Tasarımcısı ve Geliştirici · 48 saat</span><span class="en">Project Lead, Game Designer &amp; Developer · 48 hours</span></p>
+          <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Proje Lideri</span><span class="en">Project Lead</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Tasarımcısı</span><span class="en">Game Designer</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Geliştirici</span><span class="en">Game Developer</span></span><span class="rb meta"><svg><use href="#i-clock"/></svg><span class="tr">48 saat</span><span class="en">48 hours</span></span></div>
           <p><span class="tr">Robotların yönettiği distopik bir dünyada yasak "Sıfır Oda"ya ulaşmaya çalışan bir robot. Lazer kapılar, tarama alarmları ve iki farklı son.</span><span class="en">A robot sneaking into the forbidden "Zero Room" in a robot-ruled dystopia. Laser doors, scan alarms and two different endings.</span></p>
           <div class="links">
             <a class="btn sm yt" href="https://www.youtube.com/watch?v=FTygd8Xjdfs" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>Video</a>
@@ -147,7 +150,7 @@
         <article class="game reveal">
           <div class="ptop"><span class="kind">Platformer</span><span class="pin"><svg><use href="#i-pin"/></svg>MağaraJam</span></div>
           <h3>Atma Ziya</h3>
-          <p class="role"><span class="tr">Proje Lideri, Oyun Tasarımcısı ve Seviye Tasarımcısı · 2 kişilik ekip · 48 saat</span><span class="en">Project Lead, Game Designer &amp; Level Designer · team of 2 · 48 hours</span></p>
+          <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Proje Lideri</span><span class="en">Project Lead</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Tasarımcısı</span><span class="en">Game Designer</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Geliştirici</span><span class="en">Game Developer</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Seviye Tasarımcısı</span><span class="en">Level Designer</span></span><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">2 kişilik ekip</span><span class="en">Team of 2</span></span><span class="rb meta"><svg><use href="#i-clock"/></svg><span class="tr">48 saat</span><span class="en">48 hours</span></span></div>
           <p><span class="tr">Ziya'nın zihninde bir nöron olarak ilerleyip bastırılmış anılara ulaştığın, sürpriz sonlu psikolojik bir platform oyunu.</span><span class="en">A psychological platformer where you travel as a neuron through Ziya's mind toward repressed memories, with a twist ending.</span></p>
           <div class="links">
             <a class="btn sm yt" href="https://www.youtube.com/watch?v=XxHWFM26dbw" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>Video</a>
