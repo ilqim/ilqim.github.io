@@ -3,17 +3,17 @@
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* dil */
-  var btn=document.getElementById('langBtn');
+  var langBtns=document.querySelectorAll('.langsw button');
   var onLang=[];
   function setLang(l){
     root.setAttribute('data-lang',l); root.lang=l;
-    if(btn) btn.textContent=l==='tr'?'EN':'TR';
+    langBtns.forEach(function(b){var on=b.getAttribute('data-l')===l; b.classList.toggle('on',on); b.setAttribute('aria-pressed',on)});
     try{localStorage.setItem('lang',l)}catch(e){}
     onLang.forEach(function(f){f(l)});
   }
   var saved=null; try{saved=localStorage.getItem('lang')}catch(e){}
   var startLang=saved||((navigator.language||'tr').slice(0,2)==='tr'?'tr':'en');
-  if(btn) btn.addEventListener('click',function(){setLang(root.getAttribute('data-lang')==='tr'?'en':'tr')});
+  langBtns.forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-l'))})});
 
   /* isim ve unvanlar: yazılıp silinir */
   var typed=document.getElementById('typed');
@@ -95,6 +95,24 @@
     }
     addEventListener('scroll',spy,{passive:true}); addEventListener('hashchange',spy); spy();
   }
+
+  /* YouTube önizleme: tıklayınca kartın içinde oynar */
+  document.querySelectorAll('.ytv').forEach(function(box){
+    box.addEventListener('click',function(){
+      if(box.classList.contains('playing')) return;
+      var id=box.dataset.id;
+      /* Bilgisayardan dosya olarak açılınca (file://) YouTube gömülü oynatıcıya izin vermez; yeni sekmede aç */
+      if(location.protocol==='file:'){window.open('https://www.youtube.com/watch?v='+id,'_blank','noopener');return}
+      var f=document.createElement('iframe');
+      f.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0&playsinline=1&origin='+encodeURIComponent(location.origin);
+      f.referrerPolicy='strict-origin-when-cross-origin';
+      f.title=box.getAttribute('aria-label')||'YouTube';
+      f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+      f.allowFullscreen=true;
+      box.innerHTML=''; box.appendChild(f); box.classList.add('playing');
+    });
+    box.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();box.click()}});
+  });
 
   /* kaydırınca beliren kartlar */
   var items=document.querySelectorAll('.reveal');

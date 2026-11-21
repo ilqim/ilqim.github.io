@@ -2,6 +2,7 @@
 <html lang="tr" data-lang="tr">
 <head>
 <meta charset="utf-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Projeler · İlkim Eren</title>
 <meta name="description" content="İlkim Eren'in projeleri ve oyunları: simülasyon, görüntü işleme, oyun ve web.">
@@ -38,7 +39,7 @@
       <a class="active" href="projeler.html"><span class="tr">Projeler</span><span class="en">Projects</span></a>
     </nav>
     <div class="right">
-      <button class="lang" id="langBtn" aria-label="Dil değiştir / Switch language">EN</button>
+      <div class="langsw" role="group" aria-label="Dil / Language"><button type="button" data-l="tr" aria-label="Türkçe">TR</button><button type="button" data-l="en" aria-label="English">EN</button></div>
       <a class="btn yellow hide-sm" href="index.html#iletisim"><svg><use href="#i-user"/></svg><span class="tr">İletişime Geç</span><span class="en">Get in Touch</span></a>
     </div>
   </div></header>
@@ -74,10 +75,14 @@
 
         <article class="project reveal">
           <div class="ptop"><span class="kind"><span class="tr">Mobil Oyun</span><span class="en">Mobile Game</span></span><span class="pin"><svg><use href="#i-pin"/></svg>UDO Games</span></div>
-          <h3><span class="tr">Üç Haftada Profesyonel Mobil Oyun</span><span class="en">A Professional Mobile Game in Three Weeks</span></h3>
-          <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Proje Yöneticisi</span><span class="en">Project Manager</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Tasarımcısı</span><span class="en">Game Designer</span></span><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">5 kişilik ekip</span><span class="en">Team of 5</span></span></div>
-          <p><span class="tr">Profesyonel bir oyun stüdyosunun iş akışıyla, üç haftada konseptten oynanabilir bir mobil oyuna ulaştık. Proje yöneticisi olarak 5 kişilik ekibin görev dağılımını ve takvimini yönettim. Oyun tasarımcısı olarak konsepti ve mekanikleri belirledim, seviye tasarımını kurdum, oyunun temel döngüsünü (core loop) ve oyun içi ekonomisini oluşturdum. Oyun Unity ile geliştirildi.</span><span class="en">Following a professional game studio's workflow, we went from concept to a playable mobile game in three weeks. As project manager, I handled task distribution and scheduling for the 5-person team. As game designer, I defined the concept and mechanics, built the level design, and created the game's core loop and in-game economy. The game was built in Unity.</span></p>
+          <h3>Food Flow <span class="sub"><span class="tr">· Üç Haftada Profesyonel Mobil Oyun</span><span class="en">· A Professional Mobile Game in Three Weeks</span></span></h3>
+          <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Ekip Lideri</span><span class="en">Team Lead</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Tasarımcısı</span><span class="en">Game Designer</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Geliştirici</span><span class="en">Game Developer</span></span><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">5 kişilik ekip</span><span class="en">Team of 5</span></span></div>
+          <p><span class="tr">Food Flow, konveyör bant ve sıra mekaniğine dayanan bir mobil sıralama puzzle oyunu. Profesyonel bir oyun stüdyosunun iş akışıyla, üç haftada konseptten oynanabilir bir mobil oyuna ulaştık. Proje yöneticisi olarak 5 kişilik ekibin görev dağılımını ve takvimini yönettim. Oyun tasarımcısı olarak konsepti ve mekanikleri belirledim, seviye tasarımını kurdum, oyunun temel döngüsünü (core loop) ve oyun içi ekonomisini oluşturdum. Oyunun geliştirilmesinde de aktif olarak yer aldım; oyun Unity ile geliştirildi.</span><span class="en">Food Flow is a mobile sorting puzzle game built on conveyor belt and queue mechanics. Following a professional game studio's workflow, we went from concept to a playable mobile game in three weeks. As project manager, I handled task distribution and scheduling for the 5-person team. As game designer, I defined the concept and mechanics, built the level design, and created the game's core loop and in-game economy. I was also actively involved in development; the game was built in Unity.</span></p>
           <ul class="tags"><li>Unity</li><li>C#</li><li><span class="tr">Proje Yönetimi</span><span class="en">Project Management</span></li><li><span class="tr">Oyun Tasarımı</span><span class="en">Game Design</span></li><li><span class="tr">Oyun Programlama</span><span class="en">Game Programming</span></li><li><span class="tr">Seviye Tasarımı</span><span class="en">Level Design</span></li><li><span class="tr">Oyun Ekonomisi</span><span class="en">Game Economy</span></li></ul>
+          <div class="links">
+            <a class="btn sm yt" href="https://www.youtube.com/watch?v=TKQ1hi1qTa4" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg><span class="tr">Videoyu İzle</span><span class="en">Watch Video</span></a>
+            <a class="btn sm outline" href="https://github.com/ilqim/restaurant-loop" target="_blank" rel="noopener"><svg><use href="#i-gh"/></svg>GitHub</a>
+          </div>
         </article>
 
         <article class="project reveal">
@@ -98,67 +103,85 @@
     <section id="oyunlar">
       <div class="head">
         <h2><span class="tr">Oyunlarım</span><span class="en">My Games</span></h2>
-        <p><span class="tr">Game jam'lerde ve bireysel olarak geliştirdiğim oyunlar. Oynanış videoları YouTube kanalımda, oyunların kendisi itch.io sayfamda yer alıyor.</span><span class="en">Games I've developed at game jams and as individual projects. Gameplay videos are on my YouTube channel, and the games are on my itch.io page.</span></p>
+        <p><span class="tr">Stajımda, game jam'lerde ve bireysel olarak geliştirdiğim oyunlar. Oynanış videoları YouTube kanalımda, oyunların kendisi itch.io sayfamda yer alıyor.</span><span class="en">Games I've developed during my internship, at game jams and as individual projects. Gameplay videos are on my YouTube channel, and the games are on my itch.io page.</span></p>
       </div>
       <div class="games">
+        <article class="game feature reveal">
+          <div class="ptop"><span class="kind">Mobile Puzzle</span><span class="pin"><svg><use href="#i-pin"/></svg>UDO Games</span></div>
+          <h3>Food Flow</h3>
+          <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Ekip Lideri</span><span class="en">Team Lead</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Tasarımcısı</span><span class="en">Game Designer</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Geliştirici</span><span class="en">Game Developer</span></span><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">5 kişilik ekip</span><span class="en">Team of 5</span></span><span class="rb meta"><svg><use href="#i-clock"/></svg><span class="tr">3 hafta</span><span class="en">3 weeks</span></span></div>
+          <div class="feat-row"><p><span class="tr">Konveyör bant ve sıra (queue) mekaniğine dayanan bir mobil sıralama puzzle oyunu. Ortada sipariş balonlarıyla bekleyen bir müşteri kalabalığı, çevresinde dönen bir bant var. Amaç, doğru yemek kulelerini banda göndererek herkesi doyurmak ve salonu tamamen boşaltmak.</span><span class="en">A mobile sorting puzzle built on conveyor belt and queue mechanics. A crowd of customers waits in the middle with order bubbles while a belt loops around them. The goal is to send the right food stacks to the belt, feed everyone and clear the hall.</span></p><div class="ytv" role="button" tabindex="0" data-id="TKQ1hi1qTa4" aria-label="Food Flow video"><img src="https://i.ytimg.com/vi/TKQ1hi1qTa4/hqdefault.jpg" alt="" loading="lazy"><span class="ytv-play"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3Z" fill="#FF3B3B"/><path d="M45 24 27 14v20Z" fill="#fff"/></svg></span><span class="ytv-label"><span class="tr">Videoyu izle</span><span class="en">Watch video</span></span></div></div>
+          <ul class="mech">
+            <li><b><span class="tr">Konveyör Bandı ve Siparişler</span><span class="en">Conveyor Belt & Orders</span></b><span class="tr">Seçilen yemek tepsileri bantta taşınır ve aynı siparişi veren müşterilere otomatik servis edilir.</span><span class="en">Selected food trays ride the belt and are served automatically to customers with matching orders.</span></li>
+            <li><b><span class="tr">Slot Sistemi</span><span class="en">Slot System</span></b><span class="tr">Seçilen yemekler slotlarda bekler; tüm slotlar doluyken yeni yemek gelirse level kaybedilir.</span><span class="en">Picked food waits in slots; if a new item arrives while all slots are full, the level is lost.</span></li>
+            <li><b><span class="tr">Mystery Customer ve Mystery Food</span><span class="en">Mystery Customer & Mystery Food</span></b><span class="tr">Bazı siparişler ve yemekler gizli başlar; öndekiler temizlendikçe açığa çıkar.</span><span class="en">Some orders and food items start hidden and are revealed as the ones in front are cleared.</span></li>
+            <li><b><span class="tr">3 Booster</span><span class="en">3 Boosters</span></b><span class="tr">Add Tray (bant kapasitesi 5 → 6), Food Shuffle (kuyruğu karıştırır), Quick Pick (arka sıradaki yemeği seçtirir).</span><span class="en">Add Tray (belt capacity 5 → 6), Food Shuffle (shuffles the queue), Quick Pick (lets you pick items from the back rows).</span></li>
+            <li><b><span class="tr">Zorluk Sistemi</span><span class="en">Difficulty System</span></b><span class="tr">Easy mavi, Hard mor, Super Hard kırmızı tema; her zorluğa özel müzik.</span><span class="en">Easy in blue, Hard in purple, Super Hard in red, each with its own music.</span></li>
+            <li><b><span class="tr">Can ve Ödül</span><span class="en">Lives & Rewards</span></b><span class="tr">Her 30 dakikada +1 can; tamamlanan levelde 40 coin. Müzik, ses, titreşim ve bildirim ayarları.</span><span class="en">+1 life every 30 minutes; 40 coins per completed level. Music, sound, vibration and notification settings.</span></li>
+          </ul>
+          <div class="links">
+            <a class="btn sm outline" href="https://github.com/ilqim/restaurant-loop" target="_blank" rel="noopener"><svg><use href="#i-gh"/></svg>GitHub</a>
+          </div>
+        </article>
+
         <article class="game reveal">
+          <div class="ytv" role="button" tabindex="0" data-id="-xBJ3re-Pdw" aria-label="Block Fun video"><img src="https://i.ytimg.com/vi/-xBJ3re-Pdw/hqdefault.jpg" alt="" loading="lazy"><span class="ytv-play"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3Z" fill="#FF3B3B"/><path d="M45 24 27 14v20Z" fill="#fff"/></svg></span><span class="ytv-label"><span class="tr">Videoyu izle</span><span class="en">Watch video</span></span></div>
           <div class="ptop"><span class="kind">Mobile Puzzle</span><span class="pin"><svg><use href="#i-pin"/></svg><span class="tr">Kişisel Proje</span><span class="en">Personal Project</span></span></div>
           <h3>Block Fun</h3>
           <div class="roles"><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">Tek kişilik ekip</span><span class="en">Solo team</span></span></div>
           <p><span class="tr">Izgaraya şekil yerleştirerek satır, sütun ve kareleri temizlediğin bir mobil bulmaca. Kombo sistemi, market, güçlendiriciler ve şifreli skor kaydı.</span><span class="en">A mobile block puzzle about clearing rows, columns and squares. Combo system, in-game shop, power-ups and encrypted high scores.</span></p>
           <div class="links">
-            <a class="btn sm yt" href="https://youtu.be/-xBJ3re-Pdw" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>Video</a>
             <a class="btn sm play" href="https://ilqim.itch.io/block-fun" target="_blank" rel="noopener"><svg><use href="#i-itch"/></svg><span class="tr">itch.io'da Oyna</span><span class="en">Play on itch.io</span><svg class="arr"><use href="#i-ext"/></svg></a>
           </div>
         </article>
 
         <article class="game reveal">
+          <div class="ytv" role="button" tabindex="0" data-id="oCF3ymqU_ik" aria-label="Aria &amp; Alric video"><img src="https://i.ytimg.com/vi/oCF3ymqU_ik/hqdefault.jpg" alt="" loading="lazy"><span class="ytv-play"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3Z" fill="#FF3B3B"/><path d="M45 24 27 14v20Z" fill="#fff"/></svg></span><span class="ytv-label"><span class="tr">Videoyu izle</span><span class="en">Watch video</span></span></div>
           <div class="ptop"><span class="kind">Puzzle Platformer</span><span class="pin"><svg><use href="#i-pin"/></svg><span class="tr">Kişisel Proje</span><span class="en">Personal Project</span></span></div>
           <h3>Aria &amp; Alric</h3>
           <div class="roles"><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">Tek kişilik ekip</span><span class="en">Solo team</span></span></div>
           <p><span class="tr">Leylek Kral'a rağmen bebeklerine kavuşmak için yola çıkan bir çiftin hikâyesi. Her biri bir mevsim olan 4 bölüm, ara sahneler, mini oyunlar ve düşman yapay zekâsı.</span><span class="en">A couple's journey to reach their baby despite the Stork King. Four levels, one per season, with cutscenes, mini-games and enemy AI.</span></p>
           <div class="links">
-            <a class="btn sm yt" href="https://www.youtube.com/watch?v=oCF3ymqU_ik" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>Video</a>
             <a class="btn sm play" href="https://ilqim.itch.io/aria-alric" target="_blank" rel="noopener"><svg><use href="#i-itch"/></svg><span class="tr">itch.io'da Oyna</span><span class="en">Play on itch.io</span><svg class="arr"><use href="#i-ext"/></svg></a>
             <a class="btn sm outline icon-only" href="https://github.com/ilqim/Aria-Alric" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-gh"/></svg></a>
           </div>
         </article>
 
         <article class="game reveal">
+          <div class="ytv" role="button" tabindex="0" data-id="EshkBE0iMmY" aria-label="ALIEN__002 video"><img src="https://i.ytimg.com/vi/EshkBE0iMmY/hqdefault.jpg" alt="" loading="lazy"><span class="ytv-play"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3Z" fill="#FF3B3B"/><path d="M45 24 27 14v20Z" fill="#fff"/></svg></span><span class="ytv-label"><span class="tr">Videoyu izle</span><span class="en">Watch video</span></span></div>
           <div class="ptop"><span class="kind">Top Down Shooter</span><span class="pin"><svg><use href="#i-pin"/></svg>Jamination 8</span></div>
           <h3>ALIEN__002</h3>
           <div class="roles"><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">Tek kişilik ekip</span><span class="en">Solo team</span></span><span class="rb meta"><svg><use href="#i-clock"/></svg><span class="tr">48 saat</span><span class="en">48 hours</span></span></div>
           <p><span class="tr">Saldırıya uğrayan uzay gemisini kurtarmaya çalışan bir uzaylı. Tasarımdan programlamaya tüm süreç bana ait. 3 bölüm, 3 düşman ve 3 silah çeşidi.</span><span class="en">An alien defending a spaceship under attack. I handled the whole process from design to programming on my own. Three levels, three enemy and weapon types.</span></p>
           <div class="links">
-            <a class="btn sm yt" href="https://www.youtube.com/watch?v=EshkBE0iMmY" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>Video</a>
             <a class="btn sm play" href="https://ilqim.itch.io/alien-002" target="_blank" rel="noopener"><svg><use href="#i-itch"/></svg><span class="tr">itch.io'da Oyna</span><span class="en">Play on itch.io</span><svg class="arr"><use href="#i-ext"/></svg></a>
             <a class="btn sm outline icon-only" href="https://github.com/ilqim/jamination" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-gh"/></svg></a>
           </div>
         </article>
 
         <article class="game reveal">
+          <div class="ytv" role="button" tabindex="0" data-id="FTygd8Xjdfs" aria-label="X OE A-12 video"><img src="https://i.ytimg.com/vi/FTygd8Xjdfs/hqdefault.jpg" alt="" loading="lazy"><span class="ytv-play"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3Z" fill="#FF3B3B"/><path d="M45 24 27 14v20Z" fill="#fff"/></svg></span><span class="ytv-label"><span class="tr">Videoyu izle</span><span class="en">Watch video</span></span></div>
           <div class="ptop"><span class="kind">Platformer</span><span class="badges"><span class="medal" title="OstimJam 3.lük"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h4l1.5 4L14 2h3l-3.5 7.2" fill="#4C8DFF"/><path d="M7 2l3.6 7.2" stroke="#2F6BE0" stroke-width="2"/><circle cx="12" cy="15" r="6.5" fill="url(#bz)" stroke="#8A4B1E" stroke-width="1.2"/><text x="12" y="18.2" text-anchor="middle" font-size="8.5" font-weight="800" fill="#3B1D06" font-family="Plus Jakarta Sans,sans-serif">3</text><defs><linearGradient id="bz" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2B07A"/><stop offset="1" stop-color="#B8692F"/></linearGradient></defs></svg><span class="tr">3.lük</span><span class="en">3rd Place</span></span><span class="pin"><svg><use href="#i-pin"/></svg>OstimJam</span></span></div>
           <h3>X OE A-12</h3>
           <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Proje Lideri</span><span class="en">Project Lead</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Tasarımcısı</span><span class="en">Game Designer</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Geliştirici</span><span class="en">Game Developer</span></span><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">4 kişilik ekip</span><span class="en">Team of 4</span></span><span class="rb meta"><svg><use href="#i-clock"/></svg><span class="tr">48 saat</span><span class="en">48 hours</span></span></div>
           <p><span class="tr">Robotların yönettiği distopik bir dünyada yasak "Sıfır Oda"ya ulaşmaya çalışan bir robot. Lazer kapılar, tarama alarmları ve iki farklı son. OstimJam'de 3.lük ödülü aldı.</span><span class="en">A robot sneaking into the forbidden "Zero Room" in a robot-ruled dystopia. Laser doors, scan alarms and two different endings. Won 3rd place at OstimJam.</span></p>
           <div class="links">
-            <a class="btn sm yt" href="https://www.youtube.com/watch?v=FTygd8Xjdfs" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>Video</a>
             <a class="btn sm play" href="https://ilqim.itch.io/xoea-12" target="_blank" rel="noopener"><svg><use href="#i-itch"/></svg><span class="tr">itch.io'da Oyna</span><span class="en">Play on itch.io</span><svg class="arr"><use href="#i-ext"/></svg></a>
           </div>
         </article>
 
         <article class="game reveal">
+          <div class="ytv" role="button" tabindex="0" data-id="XxHWFM26dbw" aria-label="Atma Ziya video"><img src="https://i.ytimg.com/vi/XxHWFM26dbw/hqdefault.jpg" alt="" loading="lazy"><span class="ytv-play"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3Z" fill="#FF3B3B"/><path d="M45 24 27 14v20Z" fill="#fff"/></svg></span><span class="ytv-label"><span class="tr">Videoyu izle</span><span class="en">Watch video</span></span></div>
           <div class="ptop"><span class="kind">Platformer</span><span class="pin"><svg><use href="#i-pin"/></svg>MağaraJam</span></div>
           <h3>Atma Ziya</h3>
           <div class="roles"><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Proje Lideri</span><span class="en">Project Lead</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Tasarımcısı</span><span class="en">Game Designer</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Oyun Geliştirici</span><span class="en">Game Developer</span></span><span class="rb"><svg><use href="#i-role"/></svg><span class="tr">Seviye Tasarımcısı</span><span class="en">Level Designer</span></span><span class="rb meta"><svg><use href="#i-team"/></svg><span class="tr">2 kişilik ekip</span><span class="en">Team of 2</span></span><span class="rb meta"><svg><use href="#i-clock"/></svg><span class="tr">48 saat</span><span class="en">48 hours</span></span></div>
           <p><span class="tr">Ziya'nın zihninde bir nöron olarak ilerleyip bastırılmış anılara ulaştığın, sürpriz sonlu psikolojik bir platform oyunu.</span><span class="en">A psychological platformer where you travel as a neuron through Ziya's mind toward repressed memories, with a twist ending.</span></p>
           <div class="links">
-            <a class="btn sm yt" href="https://www.youtube.com/watch?v=XxHWFM26dbw" target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>Video</a>
             <a class="btn sm play" href="https://ilqim.itch.io/atma-ziya" target="_blank" rel="noopener"><svg><use href="#i-itch"/></svg><span class="tr">itch.io'da Oyna</span><span class="en">Play on itch.io</span><svg class="arr"><use href="#i-ext"/></svg></a>
           </div>
         </article>
 
-        <article class="game more reveal">
+        <article class="game more wide reveal">
           <h3><span class="tr">Daha Fazlası</span><span class="en">More</span></h3>
           <p><span class="tr">Tüm oyunlarım itch.io sayfamda, geliştirme ve oynanış videoları YouTube kanalımda.</span><span class="en">All my games are on my itch.io page, with development and gameplay videos on my YouTube channel.</span></p>
           <div class="links col">

@@ -247,3 +247,34 @@ section{scroll-margin-top:12px}
 .medal svg{width:18px;height:18px}
 footer{font-weight:300;font-size:13px;letter-spacing:.02em}
 footer{padding:16px 0;line-height:1.4}
+
+/* Food Flow öne çıkan oyun kartı */
+.game.feature{grid-column:span 2;border-color:rgba(255,201,74,.45);background:linear-gradient(135deg,rgba(255,201,74,.07),transparent 45%),var(--surface)}
+.game.more.wide{grid-column:span 2}
+.project h3 .sub{font-size:.72em;font-weight:600;color:var(--muted)}
+.mech{list-style:none;padding:0;margin:0 0 18px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mech li{background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;color:var(--muted);line-height:1.5}
+.mech li b{display:block;color:var(--ink);font-size:14px;margin-bottom:2px}
+@media (max-width:1100px) and (min-width:901px){.game.more.wide{grid-column:auto}}
+@media (max-width:900px){.game.feature,.game.more.wide{grid-column:auto}.mech{grid-template-columns:1fr}}
+
+/* TR | EN anahtarı */
+.langsw{display:inline-flex;padding:4px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.langsw button{border:0;background:transparent;color:var(--muted);font:700 13px "Plus Jakarta Sans",system-ui,sans-serif;padding:7px 12px;border-radius:999px;cursor:pointer;transition:background-color .2s,color .2s}
+.langsw button:hover{color:var(--ink)}
+.langsw button.on{background:var(--accent);color:var(--accentInk)}
+
+/* YouTube önizleme */
+.ytv{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;cursor:pointer;margin:0 0 16px;border:1px solid var(--line)}
+.ytv img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease,filter .4s}
+.ytv:hover img{transform:scale(1.05);filter:brightness(.8)}
+.ytv-play{position:absolute;inset:0;display:grid;place-items:center}
+.ytv-play svg{width:62px;height:44px;filter:drop-shadow(0 6px 16px rgba(0,0,0,.5));transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+.ytv:hover .ytv-play svg{transform:scale(1.12)}
+.ytv-label{position:absolute;left:10px;bottom:10px;font-size:12px;font-weight:700;color:#fff;background:rgba(0,0,0,.6);padding:3px 9px;border-radius:999px}
+.ytv iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ytv:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.feat-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;margin-bottom:16px}
+.feat-row p{margin:0}
+.feat-row .ytv{margin:0}
+@media (max-width:900px){.feat-row{grid-template-columns:1fr}}
